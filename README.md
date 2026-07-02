@@ -1,16 +1,32 @@
-# React + Vite
+# React Feature Showcase
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A collection of mini-apps built with React to demonstrate core front-end concepts:
 
-Currently, two official plugins are available:
+- ✅ Todo App (CRUD)
+- 🔍 Debounce Search
+- 📊 Pagination
+- 🔄 Infinite Scroll
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Tech Stack
+- React (Hooks, Router)
+- Axios
+- Tailwind CSS
+- JSONPlaceholder API
 
-## React Compiler
+## 📦 Installation
+```bash
+git clone https://github.com/Saram90/react-crud-Debounce-pagination-Infinitscroll.git
+cd react-crud-Debounce-pagination-Infinitscroll
+npm install
+npm start
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🎯 Features
+Add, edit, and delete posts with API integration
 
-## Expanding the ESLint configuration
+Debounced search input for optimized performance
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Paginated table with dynamic page size
+
+Infinite scroll for seamless content loading
+
+Responsive UI styled with Tailwind CSS
