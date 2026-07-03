@@ -5,35 +5,32 @@ import App from './App.jsx'
 
 async function checkVersion() {
 
-  const response = await fetch(
-    "/version.json?t=" + Date.now(),
-    { cache: "no-store" }
-  );
+  const response = await fetch('/version.json', {
+    cache: 'no-store',
+  });
 
   const data = await response.json();
 
-  const currentVersion =
-    localStorage.getItem("app_version");
+  const browserVersion =
+    localStorage.getItem('app_version');
 
-  if (!currentVersion) {
+  console.log('Server:', data.version);
+  console.log('Browser:', browserVersion);
+
+  if (browserVersion !== data.version) {
+
+    console.log('Version mismatch detected');
 
     localStorage.setItem(
-      "app_version",
+      'app_version',
       data.version
     );
 
-    return;
+    window.location.reload();
   }
 }
 
 checkVersion();
-
-localStorage.setItem("app_version", "1.0.0");
-
-console.log(
-  "Stored version:",
-  localStorage.getItem("app_version")
-);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
