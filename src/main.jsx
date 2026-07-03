@@ -17,16 +17,20 @@ async function checkVersion() {
   console.log('Server:', data.version);
   console.log('Browser:', browserVersion);
 
+  // 👇 PUT THE CODE HERE
   if (browserVersion !== data.version) {
-
-    console.log('Version mismatch detected');
 
     localStorage.setItem(
       'app_version',
       data.version
     );
 
-    window.location.reload();
+    window.location.href =
+      window.location.pathname +
+      '?v=' +
+      Date.now();
+
+    return;
   }
 }
 
