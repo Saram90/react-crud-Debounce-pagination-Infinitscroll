@@ -28,6 +28,13 @@ async function checkVersion() {
 
 checkVersion();
 
+localStorage.setItem("app_version", "1.0.0");
+
+console.log(
+  "Stored version:",
+  localStorage.getItem("app_version")
+);
+
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
