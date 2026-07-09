@@ -15,7 +15,7 @@ A collection of mini-apps built with React to demonstrate core front-end concept
 
 ## 📦 Installation
 ```bash
-git clone https://github.com/Saram90/react-crud-Debounce-pagination-Infinitscroll.git
+git clone https://github.com/Saram90/react-feature-showcase.git
 cd react-crud-Debounce-pagination-Infinitscroll
 npm install
 npm start
